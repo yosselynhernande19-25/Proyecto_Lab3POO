@@ -1,5 +1,5 @@
-﻿using GestionProyectoos.ServicioAutenticacion.GestionProyectoos.ServicioAutenticacion;
-using GestionProyectoos;
+﻿using GestionProyectoos;
+using GestionProyectoos.ServicioAutenticacion;
 
 public class ServicioAutenticacion : IServicioAutenticacion
 {

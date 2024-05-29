@@ -1,5 +1,4 @@
-﻿using GestionProyectoos.ServicioAutenticacion.GestionProyectoos.ServicioAutenticacion;
-using GestionProyectoos;
+﻿using GestionProyectoos;
 using GestionProyectoos.ServicioAutenticacion;
 using GestionProyectoos.ServicioProyecto;
 using System;
@@ -11,11 +10,11 @@ IServicioProyecto servicioProyecto = new ServicioProyecto();
 
 List<Proyecto> proyectosAgregadosEnEjecucion = new List<Proyecto>();
 
-Usuario desarrolladorPredeterminado = servicioAutenticacion.ObtenerUsuarioPorCorreo("dev@example.com");
+Usuario desarrolladorPredeterminado = servicioAutenticacion.ObtenerUsuarioPorCorreo("devJuarez@gmail.com");
 if (desarrolladorPredeterminado != null)
 {
-    Proyecto proyecto1 = new Proyecto { Nombre = "Proyecto de Desarrollo de Tienda Electrónica" };
-    Proyecto proyecto2 = new Proyecto { Nombre = "Desarrollo de Sistema Contable" };
+    Proyecto proyecto1 = new Proyecto { Nombre = "Proyecto de Desarrollo de Tienda Electrónica. " };
+    Proyecto proyecto2 = new Proyecto { Nombre = "Desarrollo de Sistema Contable. " };
 
     servicioProyecto.AgregarProyecto(proyecto1);
     servicioProyecto.AgregarProyecto(proyecto2);
